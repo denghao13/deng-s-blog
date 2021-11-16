@@ -1,573 +1,383 @@
+
+
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" color-mode=light>
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
-  <meta name="description" content="Code is my life.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="邓浩的个人博客">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="邓浩的个人博客">
-<meta property="og:description" content="Code is my life.">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="邓浩">
-<meta property="article:tag" content="Web,前端,node,ES6,开发,程序员,技术宅,java,android,Python,爬虫">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="http://example.com/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'zh-CN'
-  };
-</script>
-
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>邓浩的个人博客</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="google" content="notranslate" />
+  <meta name="keywords" content="Web,前端,node,ES6,开发,程序员,技术宅,java,android,Python,爬虫">
+  <meta name="description" content="Code is my life.">
+  <meta name="author" content="邓浩">
+  <link rel="icon" href="/images/icons/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="/images/icons/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png" sizes="180x180">
+  <meta rel="mask-icon" href="/images/icons/stun-logo.svg" color="#333333">
+  
+    <meta rel="msapplication-TileImage" content="/images/icons/favicon-144x144.png">
+    <meta rel="msapplication-TileColor" content="#000000">
   
 
+  
+<link rel="stylesheet" href="/css/style.css">
 
 
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">邓浩的个人博客</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">Code is my life.</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
-    </header>
-
+  
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1445822_p6ry5n7lrr.css">
 
+  
 
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
+  
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 
-          <div class="content index posts-expand">
-            
+  
+
+  
+    
       
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/15/Vue%E8%84%9A%E6%89%8B%E6%9E%B6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="邓浩">
-      <meta itemprop="description" content="Code is my life.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="邓浩的个人博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/11/15/Vue%E8%84%9A%E6%89%8B%E6%9E%B6/" class="post-title-link" itemprop="url">Vue基础-脚手架</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-11-15 10:22:45 / 修改时间：21:56:01" itemprop="dateCreated datePublished" datetime="2021-11-15T10:22:45+08:00">2021-11-15</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+        
+        
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/xcode.min.css" name="highlight-style" mode="light">
 
       
-          <h3 id="Vue简介"><a href="#Vue简介" class="headerlink" title="Vue简介"></a>Vue简介</h3><p><strong><a target="_blank" rel="noopener" href="https://cn.vuejs.org/">Vue</a></strong>(读音 /vjuː/，类似于 view) 是一套用于构建用户界面的<strong>渐进式JavaScript框架</strong>。与其它框架不同的是，Vue被设计为可以自底向上逐层应用。Vue的核心库只关注视图层，方便与第三方库或既有项目整合。另一方面，Vue 完全有能力驱动采用单文件组件和Vue生态系统支持的库开发的复杂单页应用。</p>
-<h3 id="铺垫"><a href="#铺垫" class="headerlink" title="铺垫"></a>铺垫</h3><p>在学习Vue之前，需要安装的几个小插件（谷歌：vue-devtools，vs code：vetur，VueHelper）</p>
-<h3 id="库和框架"><a href="#库和框架" class="headerlink" title="库和框架"></a>库和框架</h3><p>库: 封装的属性或方法 (例jquery.js)</p>
-<p>框架: 拥有自己的规则和元素, 比库强大的多 (例vue.js)</p>
-<h3 id="脚手架准备"><a href="#脚手架准备" class="headerlink" title="脚手架准备"></a>脚手架准备</h3><p>1.全局安装 @vue/cli 模块包</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yarn <span class="built_in">global</span> add @vue/cli</span><br><span class="line"># OR</span><br><span class="line">npm install -g @vue/cli</span><br></pre></td></tr></table></figure>
-<p>2.查看 Vue 命令</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue -V</span><br></pre></td></tr></table></figure>
-<h3 id="脚手架创建项目-启动服务"><a href="#脚手架创建项目-启动服务" class="headerlink" title="脚手架创建项目-启动服务"></a>脚手架创建项目-启动服务</h3><p>1.创建项目<br>（注意: 项目名不能带大写字母, 中文和特殊符号）</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># vue和create是命令, vuecli-demo是自己的文件夹名</span><br><span class="line">vue create vuecli-demo</span><br></pre></td></tr></table></figure>
-<p>2.选择模版（可以上下箭头选择, 回车确定, 弄错了ctrl+c从第1步来）</p>
-<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2fd2657e32cd49c990fd808757862ea3~tplv-k3u1fbpfcp-watermark.image" alt="image.png"><br>3.选择包管理器</p>
-<p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/863bdd96be9b41fa98be9f9b3560c152~tplv-k3u1fbpfcp-watermark.image" alt="image.png"><br>4.等待下载脚手架项目, 需要的依赖包</p>
-<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e35f6d0afb954e73ae1cc6b060f10bf9~tplv-k3u1fbpfcp-watermark.image" alt="image.png"><br>5.按照步骤运行两行代码-开启服务器</p>
-<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ca279fd33de543f2999f3aea1deea082~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>
-<h3 id="脚手架目录分析"><a href="#脚手架目录分析" class="headerlink" title="脚手架目录分析"></a>脚手架目录分析</h3><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a6279f0cc1c14cf8872bb0d99379afc3~tplv-k3u1fbpfcp-watermark.image" alt="image.png"><br>主要文件</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">node_modules      – 第三方依赖包</span><br><span class="line">public/index.html – 浏览器运行的网页</span><br><span class="line">src/main.js       – webpack打包的入口文件</span><br><span class="line">src/App.vue       – Vue入口页面</span><br><span class="line">package.json      – 依赖包列表文件和自定义命令</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8d4291536262488e9c4b5aad6135b7e2~tplv-k3u1fbpfcp-watermark.image" alt="1627997238868.png"></p>
-<h3 id="脚手架自定义配置"><a href="#脚手架自定义配置" class="headerlink" title="脚手架自定义配置"></a>脚手架自定义配置</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 覆盖webpack的配置 */</span></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  <span class="attr">devServer</span>: &#123; <span class="comment">// 自定义服务配置</span></span><br><span class="line">    <span class="attr">open</span>: <span class="literal">true</span>, <span class="comment">// 自动打开浏览器</span></span><br><span class="line">    <span class="attr">port</span>: <span class="number">3000</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="脚手架-eslint了解"><a href="#脚手架-eslint了解" class="headerlink" title="脚手架-eslint了解"></a>脚手架-eslint了解</h3><p>eslint是一个插件, 内置在脚手架项目里配置好了, 运行时检查你的代码风格</p>
-<p><strong>如何短暂关闭</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line"><span class="comment">//其他代码...</span></span><br><span class="line">    lintOnSave = <span class="literal">false</span> <span class="comment">//关闭sslint检查</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="脚手架单Vue文件"><a href="#脚手架单Vue文件" class="headerlink" title="脚手架单Vue文件"></a>脚手架单Vue文件</h3><ol>
-<li>template里只能有一个<strong>根</strong>标签</li>
-<li>vue文件-独立模块-作用域互不影响</li>
-<li>style配合scoped属性, 保证样式只针对当前template内标签生效</li>
-<li>vue文件配合webpack, 把他们打包起来插入到index.html</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- template必须, 只能有一个根标签, 影响渲染到页面的标签结构 --&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">div</span>&gt;</span>欢迎使用vue<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line">&lt;!-- js相关 --&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span></span><br><span class="line"><span class="javascript"><span class="xml"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">  <span class="attr">name</span>: <span class="string">&#x27;App&#x27;</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">&#125;</span></span></span><br><span class="line"><span class="javascript"><span class="xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line">&lt;!-- 当前组件的样式, 设置scoped, 可以保证样式只对当前页面有效 --&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<h3 id="MVVM模型"><a href="#MVVM模型" class="headerlink" title="MVVM模型"></a>MVVM模型</h3><ul>
-<li><p>MVVM，一种软件架构模式，决定了写代码的思想和层次</p>
-<ul>
-<li>  M： model数据模型 (data里定义)</li>
-<li>  V： view视图 （页面标签）</li>
-<li>  VM： ViewModel视图模型 (vue.js源码)</li>
-</ul>
-</li>
-<li><p>MVVM通过<code>数据双向绑定</code>让数据自动地双向同步 <strong>不再需要操作DOM</strong></p>
-<ul>
-<li>  V （修改视图） -&gt; M（数据自动同步）</li>
-<li>  M（修改数据） -&gt; V （视图自动同步）</li>
-</ul>
-</li>
-</ul>
-<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5130c380d4d24c9fa571f9dfbba64610~tplv-k3u1fbpfcp-watermark.image" alt="MVVM.png"><br><strong>1. 在vue中，不推荐直接手动操作DOM！！！</strong></p>
-<p><strong>2. 在vue中，通过数据驱动视图，不要在想着怎么操作DOM，而是想着如何操作数据！！</strong> (思想转变)</p>
-<h3 id="Vue指令"><a href="#Vue指令" class="headerlink" title="Vue指令"></a>Vue指令</h3><p>vue指令, 实质上就是特殊的 html 标签属性, 特点: v- 开头</p>
-<h4 id="v-bind-指令"><a href="#v-bind-指令" class="headerlink" title="v-bind 指令"></a>v-bind 指令</h4><ul>
-<li>  语法：<code>v-bind:属性名=&quot;vue变量&quot;</code></li>
-<li>  简写：<code>:属性名=&quot;vue变量&quot;</code></li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- vue指令-v-bind属性动态赋值 --&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">v-bind:href</span>=<span class="string">&quot;url&quot;</span>&gt;</span>我是a标签<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">:src</span>=<span class="string">&quot;imgSrc&quot;</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<h4 id="v-on-指令"><a href="#v-on-指令" class="headerlink" title="v-on 指令"></a>v-on 指令</h4><ul>
-<li><p>语法</p>
-<ul>
-<li>  v-on:事件名=”methods中的函数”</li>
-<li>  v-on:事件名=”methods中的函数(实参)”</li>
-</ul>
-</li>
-<li><p>  简写: @事件名=”methods中的函数”</p>
-</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- vue指令:   v-on事件绑定--&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>你要买商品的数量: &#123;&#123;count&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">&quot;addFn&quot;</span>&gt;</span>增加1个<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">&quot;addCountFn(5)&quot;</span>&gt;</span>一次加5件<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">&quot;subFn&quot;</span>&gt;</span>减少<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span></span><br><span class="line"><span class="javascript"><span class="xml">    <span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">        <span class="comment">// ...其他省略</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">        <span class="attr">methods</span>: &#123;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">            <span class="function"><span class="title">addFn</span>(<span class="params"></span>)</span>&#123; <span class="comment">// this代表export default后面的组件对象(下属有data里return出来的属性)</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">                <span class="built_in">this</span>.count++</span></span></span><br><span class="line"><span class="javascript"><span class="xml">            &#125;,</span></span></span><br><span class="line"><span class="javascript"><span class="xml">            <span class="function"><span class="title">addCountFn</span>(<span class="params">num</span>)</span>&#123;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">                <span class="built_in">this</span>.count += num</span></span></span><br><span class="line"><span class="javascript"><span class="xml">            &#125;,</span></span></span><br><span class="line"><span class="javascript"><span class="xml">            <span class="function"><span class="title">subFn</span>(<span class="params"></span>)</span>&#123;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">                <span class="built_in">this</span>.count--</span></span></span><br><span class="line"><span class="javascript"><span class="xml">            &#125;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">        &#125;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">    &#125;</span></span></span><br><span class="line"><span class="javascript"><span class="xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<p>v-on事件对象(1.无传参, 通过形参直接接收    2.传参, 通过$event指代事件对象传给事件处理函数)</p>
-<p>v-on修饰符:</p>
-<ul>
-<li><p>  .stop - 阻止事件冒泡</p>
-</li>
-<li><p>  .prevent - 阻止默认行为</p>
-</li>
-<li><p>  .capture - 事件捕获模式</p>
-</li>
-<li><p>  .self - 只当事件是从侦听器绑定的元素本身触发时才触发回调</p>
-</li>
-<li><p>  .once - 只触发一次回调</p>
-</li>
-<li><p>  .enter - 监测回车按键</p>
-</li>
-<li><p>  @keyup.esc - 监测返回按键</p>
-<h4 id="v-model-指令"><a href="#v-model-指令" class="headerlink" title="v-model 指令"></a>v-model 指令</h4></li>
-<li><p>  语法: v-model=”vue数据变量”</p>
-</li>
-<li><p>双向数据绑定</p>
-<ul>
-<li>  数据变化 -&gt; 视图自动同步</li>
-<li>  视图变化 -&gt; 数据自动同步<br>v-model修饰符</li>
-</ul>
-</li>
-<li><p>v-model.修饰符=”vue数据变量”</p>
-<ul>
-<li>  .number 以parseFloat转成数字类型</li>
-<li>  .trim 去除首尾空白字符</li>
-<li>  .lazy 在change时触发而非inupt时<h4 id="v-html指令"><a href="#v-html指令" class="headerlink" title="v-html指令"></a>v-html指令</h4></li>
-</ul>
-</li>
-<li><p>语法:</p>
-<ul>
-<li>  v-html=”vue数据变量”</li>
-</ul>
-</li>
-<li><p>  注意: 会覆盖插值表达式</p>
-<h4 id="v-show-v-if-指令"><a href="#v-show-v-if-指令" class="headerlink" title="v-show/v-if 指令"></a>v-show/v-if 指令</h4></li>
-<li><p>语法:</p>
-<ul>
-<li>  v-show=”vue变量”</li>
-<li>  v-if=”vue变量”</li>
-</ul>
-</li>
-<li><p>原理</p>
-<ul>
-<li>  v-show 用的display:none隐藏 (频繁切换使用)</li>
-<li>  v-if 直接从DOM树上移除</li>
-</ul>
-</li>
-<li><p>高级</p>
-<ul>
-<li>  v-else使用<h4 id="v-for-指令"><a href="#v-for-指令" class="headerlink" title="v-for 指令"></a>v-for 指令</h4></li>
-</ul>
-</li>
-<li><p>语法</p>
-<ul>
-<li>  v-for=”(值变量, 索引变量) in 目标结构”</li>
-<li>  v-for=”值变量 in 目标结构”</li>
-</ul>
-</li>
-<li><p>目标结构:</p>
-<ul>
-<li>  可以遍历数组 / 对象 / 数字 / 字符串</li>
-</ul>
-</li>
-<li><p>注意:</p>
-<p>  v-for的临时变量名不能用到v-for范围外</p>
-<p>  同级标签的key值不能重复</p>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+        
+        
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/solarized-dark.min.css" name="highlight-style" mode="dark">
 
       
   
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/13/webpack%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="邓浩">
-      <meta itemprop="description" content="Code is my life.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="邓浩的个人博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/11/13/webpack%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" class="post-title-link" itemprop="url">webpack的基本使用</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-11-13 10:22:45 / 修改时间：16:15:49" itemprop="dateCreated datePublished" datetime="2021-11-13T10:22:45+08:00">2021-11-13</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h4 id="什么是-webpack"><a href="#什么是-webpack" class="headerlink" title="什么是 webpack"></a>什么是 webpack</h4><ul>
-<li>静态模块打包器</li>
-<li>还能翻译和压缩代码</li>
-<li>减小代码包体积, 让浏览器更快速打开网页</li>
-</ul>
-<h4 id="webpack-使用前准备"><a href="#webpack-使用前准备" class="headerlink" title="webpack 使用前准备"></a>webpack 使用前准备</h4><pre><code>1、创建一个新的文件夹
-2、初始化包环境（yarn init -y）
-3、安装依赖包（yarn add webpack webpack-cli -D）
-4、在package.json中，配置scripts （scripts：&#123;&quot;build&quot;:&quot;webpack&quot;&#125;）
-</code></pre>
-<h4 id="webpack-基本使用"><a href="#webpack-基本使用" class="headerlink" title="webpack 基本使用"></a>webpack 基本使用</h4><pre><code>1、新建src/add/add.js - 定义求和函数导出（export const addFn = (a, b) =&gt; a + b）
-2、新建src/index.js导入使用：
-              import &#123; addFn &#125; from &#39;./add/add&#39;
-              console.log(addFn(5, 2));
-3、运行打包命令（yarn build）
-</code></pre>
-<h4 id="webpack-配置修改"><a href="#webpack-配置修改" class="headerlink" title="webpack 配置修改"></a>webpack 配置修改</h4><pre><code>默认入口：src/index.js
-默认出口：dist/main.js
-</code></pre>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">项目根目录 - 新建webpack.config.js文件 (默认配置文件名)</span><br><span class="line">填入配置项</span><br><span class="line">修改代码里src/index.js 为 src/main.js</span><br><span class="line">重新打包观察输出文件名字</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const path = require(&quot;path&quot;)</span><br><span class="line"></span><br><span class="line">module.exports = &#123;</span><br><span class="line">    entry: &quot;./src/main.js&quot;, // enter: 默认入口</span><br><span class="line">    output: &#123;</span><br><span class="line">        path: path.join(__dirname, &quot;dist&quot;), // 出口&quot;文件夹&quot;名</span><br><span class="line">        filename: &quot;bundle.js&quot;               // 出口&quot;文件&quot;名</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="运行-yarn-build-发生了什么"><a href="#运行-yarn-build-发生了什么" class="headerlink" title="运行 yarn build 发生了什么"></a>运行 yarn build 发生了什么</h4><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7bccecd46ed0406e92d562f6747292f8~tplv-k3u1fbpfcp-watermark.image" alt="image-20210421125257233.png"></p>
-<h4 id="代码源文件和-webpack-之间关系图"><a href="#代码源文件和-webpack-之间关系图" class="headerlink" title="代码源文件和 webpack 之间关系图"></a>代码源文件和 webpack 之间关系图</h4><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fc23a90766744e40b038a1d18a33c79c~tplv-k3u1fbpfcp-watermark.image" alt="1627471544248.png"></p>
-<h4 id="webpack-插件"><a href="#webpack-插件" class="headerlink" title="webpack 插件"></a>webpack 插件</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">自动生成html文件（yarn add html-webpack-plugin -D）</span><br><span class="line">// 引入自动生成 html 的插件</span><br><span class="line">const HtmlWebpackPlugin = require(&#x27;html-webpack-plugin&#x27;)</span><br><span class="line"></span><br><span class="line">module.exports = &#123;</span><br><span class="line">    // ...省略其他代码</span><br><span class="line">    plugins: [</span><br><span class="line">        new HtmlWebpackPlugin(&#123;</span><br><span class="line">            // 以此为基准生成打包后html文件</span><br><span class="line">            template: &#x27;./public/index.html&#x27;</span><br><span class="line">        &#125;)</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="webpack-加载器"><a href="#webpack-加载器" class="headerlink" title="webpack 加载器"></a>webpack 加载器</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1、 file-loader：把文件输出到一个文件夹中，在代码中通过相对 URL 去引用输出的文件</span><br><span class="line">2、 url-loader：和 file-loader 类似，但是能在文件很小的情况下以 base64 的方式把文件内容注入到代码中去</span><br><span class="line">3、 source-map-loader：加载额外的 Source Map 文件，以方便断点调试</span><br><span class="line">4、 image-loader：加载并且压缩图片文件</span><br><span class="line">5、 babel-loader：把 ES6 转换成 ES5</span><br><span class="line">6、 css-loader：加载 CSS，支持模块化、压缩、文件导入等特性</span><br><span class="line">7、 style-loader：把 CSS 代码注入到 JavaScript 中，通过 DOM 操作去加载 CSS。</span><br><span class="line">8、less-loader： 让webpack处理less文件, 内置还会用less模块, 翻译less代码成css代码</span><br><span class="line">9、 eslint-loader：通过 ESLint 检查 JavaScript 代码</span><br></pre></td></tr></table></figure>
-
-<h4 id="webpack-开发服务器"><a href="#webpack-开发服务器" class="headerlink" title="webpack 开发服务器"></a>webpack 开发服务器</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">下载包  webpack-dev-server</span><br><span class="line">配置自定义命令serve</span><br><span class="line">scripts: &#123;</span><br><span class="line">	&quot;build&quot;: &quot;webpack&quot;,</span><br><span class="line">	&quot;serve&quot;: &quot;webpack serve&quot;</span><br><span class="line">&#125;</span><br><span class="line">运行命令-启动webpack开发服务器（yarn serve 或者npm run serve）</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">服务器配置</span><br><span class="line">module.exports = &#123;</span><br><span class="line">    // ...其他配置</span><br><span class="line">    devServer: &#123;</span><br><span class="line">      port: 3000, // 端口号</span><br><span class="line">      open: true // 启动后自动打开浏览器</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
+  <script>
+    var CONFIG = window.CONFIG || {};
+    var ZHAOO = window.ZHAOO || {};
+    CONFIG = {
+      isHome: true,
+      fancybox: true,
+      pjax: false,
+      loading: {
+        gif: '/images/theme/loading.gif',
+        lottie: ''
+      },
+      lazyload: {
+        enable: true,
+        only_post: 'false',
+        loading: {
+          gif: '/images/theme/loading.gif',
+          lottie: ''
+        }
+      },
+      donate: {
+        enable: true,
+        alipay: 'https://pic.izhaoo.com/alipay.jpg',
+        wechat: 'https://pic.izhaoo.com/wechat.jpg'
+      },
+      galleries: {
+        enable: true
+      },
+      fab: {
+        enable: true,
+        always_show: false
+      },
+      carrier: {
+        enable: true
+      },
+      daovoice: {
+        enable: false
+      },
+      preview: {
+        background: {
+          default: '',
+          api: ''
+        },
+        motto: {
+          default: '我在开了灯的床头下，想问问自己的心啊。',
+          typing: true,
+          api: 'https://v2.jinrishici.com/one.json',
+          data_contents: '["data","content"]'
+        },
+      },
+      qrcode: {
+        enable: true,
+        type: 'url',
+        image: 'https://pic.izhaoo.com/weapp-code.jpg',
+      },
+      toc: {
+        enable: true
+      },
+      scrollbar: {
+        type: 'default'
+      },
+      notification: {
+        enable: false,
+        delay: 4500,
+        list: '',
+        page_white_list: '',
+        page_black_list: ''
+      },
+      search: {
+        enable: false,
+        path: ''
       }
     }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
+  </script>
 
-        </div>
-          
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
+  
 
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">邓浩</p>
-  <div class="site-description" itemprop="description">Code is my life.</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">2</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">标签</span>
-      </div>
-  </nav>
-</div>
+<body class="lock-screen">
+  <div class="loading" id="loading"></div>
+  
+    
 
 
-
-      </div>
-
+  <nav class="navbar">
+    <div class="left">
+      
+      
+        <i class="iconfont iconqrcode j-navbar-qrcode"></i>
+      
+      
+        <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
+      
+      
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
+    <div class="center"> </div>
+    <div class="right">
+      <i class="iconfont iconmenu j-navbar-menu"></i>
+    </div>
+    
+      <div id="qrcode-navbar"></div>
+    
+  </nav>
 
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
   
-  &copy; 
-  <span itemprop="copyrightYear">2021</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">邓浩</span>
+  
+
+<nav class="menu">
+  <div class="menu-container">
+    <div class="menu-close">
+      <i class="iconfont iconbaseline-close-px"></i>
+    </div>
+    <ul class="menu-content"><li class="menu-item">
+        <a href="/ " class="underline active"> 首页</a>
+      </li><li class="menu-item">
+        <a href="/galleries/ " class="underline "> 摄影</a>
+      </li><li class="menu-item">
+        <a href="/archives/ " class="underline "> 归档</a>
+      </li><li class="menu-item">
+        <a href="/tags/ " class="underline "> 标签</a>
+      </li><li class="menu-item">
+        <a href="/categories/ " class="underline "> 分类</a>
+      </li><li class="menu-item">
+        <a href="/about/ " class="underline "> 关于</a>
+      </li></ul>
+    
+      <div class="menu-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme - <a target="_blank" href="https://github.com/izhaoo/hexo-theme-zhaoo">zhaoo</a></p></div>
+    
+  </div>
+</nav>
+  <main id="main">
+  
+    <div class="preview">
+  <!-- <nav class="navbar j-navbar-menu">
+    <i class="iconfont iconmenu"></i>
+  </nav> -->
+  <div class="preview-image">
+    
+        
+              <div class="preview-overlay">
+                <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                  <defs>
+                    <path id="gentle-wave"
+                      d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                  </defs>
+                  <g class="preview-parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(var(--color-background-rgb),0.7"></use>
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(var(--color-background-rgb),0.5)"></use>
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(var(--color-background-rgb),0.3)"></use>
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="var(--color-background)"></use>
+                  </g>
+                </svg>
+              </div>
+              
+  </div>
+  <div class="preview-motto-wrapper">
+    <h2 class="preview-motto" id="motto">
+      
+    </h2>
+    
+      <span class="preview-cursor">_</span>
+      
+  </div>
+  <div class="preview-scroll">
+    <a href="#container" class="smooth-scroll"><i class="iconfont iconMouse"></i></a>
+  </div>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
-  </div>
+  
+  <div class="container" id="container">
+    <section class="row post">
+  
+    
 
-        
-
-
-
-
-
-
-
-
+<div class="col-lg-4 col-md-6 col-sm-12 post-item">
+  <div class="post-wrap">
+    
+    <a href="/2021/11/15/Vue%E8%84%9A%E6%89%8B%E6%9E%B6/" class="post-image">
+      <img   class="lazyload" data-original="/images/theme/post-image.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+    </a>
+    <div class="post-content">
+      <div class="post-content-wrap">
+        <h3 class="post-title"><a href="/2021/11/15/Vue%E8%84%9A%E6%89%8B%E6%9E%B6/" title="Vue基础-脚手架" >Vue基础-脚手架</a></h3>
+        <div class="post-excerpt">
+          <p class="substr-3">Vue简介Vue(读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式JavaScript框架。与其它框架不同的是，Vue被设计为可以自底向上逐层应用。Vue的核心库只关注视图...</p>
+        </div>
       </div>
-    </footer>
+      <div class="post-info">
+        <span class="post-info-item"><i class="iconfont iconcalendar"></i>十一月 15, 2021</span>
+        
+      </div>
+    </div>
   </div>
+</div>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
+    
+
+<div class="col-lg-4 col-md-6 col-sm-12 post-item">
+  <div class="post-wrap">
+    
+    <a href="/2021/11/13/webpack%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" class="post-image">
+      <img   class="lazyload" data-original="/images/theme/post-image.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+    </a>
+    <div class="post-content">
+      <div class="post-content-wrap">
+        <h3 class="post-title"><a href="/2021/11/13/webpack%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="webpack的基本使用" >webpack的基本使用</a></h3>
+        <div class="post-excerpt">
+          <p class="substr-3">什么是 webpack
+静态模块打包器
+还能翻译和压缩代码
+减小代码包体积, 让浏览器更快速打开网页
+
+webpack 使用前准备1、创建一个新的文件夹
+2、初始化包环境（yarn init -...</p>
+        </div>
+      </div>
+      <div class="post-info">
+        <span class="post-info-item"><i class="iconfont iconcalendar"></i>十一月 13, 2021</span>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+</section>
+    <section class="paginator">
+  
+</section>
+  </div>
+</main>
+  
+
+<footer class="footer">
+  <div class="footer-social"><a 
+        href="tencent://message/?Menu=yes&uin=894519210 "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#12B7F5'" 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconQQ "></i>
+      </a><a 
+        href="javascript:; "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#09BB07'" 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconwechat-fill "></i>
+      </a><a 
+        href="https://www.instagram.com/izhaoo/ "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#DA2E76'" 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconinstagram "></i>
+      </a><a 
+        href="https://github.com/zhaoo "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#9f7be1'" 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  icongithub-fill "></i>
+      </a><a 
+        href="mailto:izhaoo@163.com "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color=#FF3B00" 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconmail"></i>
+      </a></div>
+  
+    <div class="footer-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme - <a target="_blank" href="https://github.com/izhaoo/hexo-theme-zhaoo">zhaoo</a></p></div>
+  
+</footer>
+  
+      <div class="fab fab-plus">
+    <i class="iconfont iconplus"></i>
+  </div>
+  
+  
+  
+  <div class="fab fab-up">
+    <i class="iconfont iconcaret-up"></i>
+  </div>
+  
+  
+  
+    
+<script src="/js/color-mode.js"></script>
+
+  
+  
+</body>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+
+
+  
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
+
+
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+  
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+
+
+
 
 <script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
+<script src="/js/script.js"></script>
 
 
 
@@ -575,6 +385,19 @@
 
 
 
+  <script>
+    (function () {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
 
 
 
@@ -583,9 +406,9 @@
 
 
 
-  
 
-  
 
-</body>
+
+
+
 </html>
